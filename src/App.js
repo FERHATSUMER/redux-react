@@ -1,7 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Product from "./pages/Product";
+import Header from "./components/Header";
+
 function App() {
   return (
     <div>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <Router>
+    <Header/>
+      <Routes>
+        <Route path="/" element={<Product/>} />
+        <Route path="/" element={<h1>About</h1>} />
+        <Route path="/" element={<h1>Contact</h1>} />
+      </Routes>
+    </Router>
     </div>
   );
 }
