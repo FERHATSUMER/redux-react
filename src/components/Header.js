@@ -7,11 +7,11 @@ export default function Header() {
       <div className='text-3xl'>React App</div>
       <div className='flex items-center flex-grow justify-center gap-2'>
         <input type="text" placeholder="Arama yapınız..." />
-        <select className='text-black h-7 rounded-lg' name="sort" id="sort">
+        <select className='text-black h-7 rounded-lg px-4' name="sort" id="sort">
           <option value="asc">Artan</option>
           <option value="desc">Azalan</option>
         </select>
-        <MdPostAdd />
+        <MdPostAdd className='bg-indigo-500 cursor-pointer' size={24} />
       </div>
     </div>
   );
